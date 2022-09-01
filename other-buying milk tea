@@ -1,0 +1,15 @@
+let milkTeaPrice = 55
+let blackTeaPrice = 35
+let budget = 50
+
+if ( budget >= milkTeaPrice ) {
+  budget = budget - milkTeaPrice
+  console.log('立即買杯奶茶！')
+} else if ( budget >= blackTeaPrice ) {
+  budget = budget - blackTeaPrice
+  console.log('改買一杯樸實的紅茶吧！')
+} else {
+  console.log('無奈地離開')
+}
+
+console.log(`錢包剩下 ${budget} 元`)
