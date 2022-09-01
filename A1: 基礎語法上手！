@@ -1,0 +1,8 @@
+let apple = 3
+let orange = 4
+let peach = 10
+let appleQuantity = 1
+let orangeQuantity = 4
+let peachQuantity = 2
+let total = (appleQuantity * apple) + (orangeQuantity * orange) + (peachQuantity * peach)
+console.log(`需要花 ${total} 元`)
