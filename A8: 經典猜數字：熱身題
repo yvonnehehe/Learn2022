@@ -1,0 +1,26 @@
+// ========= 宣告變數 ==========
+let answer = Math.floor(Math.random() * 100) + 1
+let guess = 0 
+let count = 0
+// ========= 從這裡開始 ==========
+//  請印出正確數字 
+console.log(`正確數字為：${answer}`)
+// ===  設計判斷式和迴圈解決問題 ====
+// 迴圈，代表挑戰者開始猜數字
+while (guess <= 100) {
+  guess = Math.floor(Math.random() * 100) + 1 // 挑戰者猜出本回合的指定數字  
+  count++
+// ==== 和正確答案做比較 ====  
+// 條件判斷
+// 若太大的話
+if (guess > answer) {
+  console.log(`第${count}回合，挑戰者猜${guess}，莊家回答：太大了`)
+// 若太小的話
+} else if (guess < answer) {
+  console.log(`第${count}回合，挑戰者猜${guess}，莊家回答：太小了`)
+// 若一樣大的話
+} else {
+  console.log(`第${count}回合，挑戰者猜${guess}，莊家回答：恭喜答對！`)
+  break
+}
+}
